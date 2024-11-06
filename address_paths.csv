@@ -1,0 +1,12 @@
+Address Path
+items.item[i]
+items.item[i].id
+items.item[i].type
+items.item[i].name
+items.item[i].ppu
+items.item[i].batters.batter[i]
+items.item[i].batters.batter[i].id
+items.item[i].batters.batter[i].type
+items.item[i].topping[i]
+items.item[i].topping[i].id
+items.item[i].topping[i].type

@@ -1,0 +1,27 @@
+Address Path,Value
+items.item[0].id,0001
+items.item[0].type,donut
+items.item[0].name,Cake
+items.item[0].ppu,0.55
+items.item[0].batters.batter[0].id,1001
+items.item[0].batters.batter[0].type,Regular
+items.item[0].batters.batter[1].id,1002
+items.item[0].batters.batter[1].type,Chocolate
+items.item[0].batters.batter[2].id,1003
+items.item[0].batters.batter[2].type,Blueberry
+items.item[0].batters.batter[3].id,1004
+items.item[0].batters.batter[3].type,Devil's Food
+items.item[0].topping[0].id,5001
+items.item[0].topping[0].type,None
+items.item[0].topping[1].id,5002
+items.item[0].topping[1].type,Glazed
+items.item[0].topping[2].id,5005
+items.item[0].topping[2].type,Sugar
+items.item[0].topping[3].id,5007
+items.item[0].topping[3].type,Powdered Sugar
+items.item[0].topping[4].id,5006
+items.item[0].topping[4].type,Chocolate with Sprinkles
+items.item[0].topping[5].id,5003
+items.item[0].topping[5].type,Chocolate
+items.item[0].topping[6].id,5004
+items.item[0].topping[6].type,Maple

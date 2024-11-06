@@ -1,0 +1,81 @@
+{
+    "transactionId": "TXN_20231104_12345",
+    "timestamp": "2023-11-04T12:34:56Z",
+    "transactionType": "CREDIT_CARD_PAYMENT",
+    "amount": {
+      "currency": "USD",
+      "value": 199.99
+    },
+    "description": "Online Purchase at Acme Store",
+    "merchant": {
+      "name": "Acme Store",
+      "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zip": "12345",
+        "country": "USA"
+      },
+      "category": "Retail"
+    },
+    "cardDetails": {
+      "cardNumber": "XXXX XXXX XXXX 1234",
+      "cardType": "VISA",
+      "expiryDate": "12/25",
+      "cvv": "123"
+    },
+    "billingAddress": {
+      "street": "456 Elm St",
+      "city": "Yourtown",
+      "state": "NY",
+      "zip": "54321",
+      "country": "USA"
+    },
+    "shippingAddress": {
+      "street": "789 Oak St",
+      "city": "Othertown",
+      "state": "FL",
+      "zip": "67890",
+      "country": "USA"
+    },
+    "fees": [
+      {
+        "type": "Processing Fee",
+        "amount": {
+          "currency": "USD",
+          "value": 2.99
+        }
+      },
+      {
+        "type": "Foreign Transaction Fee",
+        "amount": {
+          "currency": "USD",
+          "value": 1.50
+        }
+      }
+    ],
+    "status": "COMPLETED",
+    "referenceNumber": "ORDER_123456789",
+    "additionalDetails": {
+      "orderId": "ORD_20231104_ABC123",
+      "shippingMethod": "Standard Shipping",
+      "items": [
+        {
+          "name": "Product A",
+          "quantity": 2,
+          "price": {
+            "currency": "USD",
+            "value": 49.99
+          }
+        },
+        {
+          "name": "Product B",
+          "quantity": 1,
+          "price": {
+            "currency": "USD",
+            "value": 99.99
+          }
+        }
+      ]
+    }
+  }
