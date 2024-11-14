@@ -24,7 +24,7 @@ def extract_address_paths(data, prefix=''):
 
 def main():
     # Read the JSON file
-    with open('sample1.json', 'r') as file:
+    with open('sample.json', 'r') as file:
         data = json.load(file)
 
     # Extract all address paths
