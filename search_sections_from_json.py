@@ -65,18 +65,18 @@ def get_json_data_by_address(data, filter_address, addresses, conditions=None):
         return results
 
     # Handle conditions
-    if conditions and isinstance(filtered_data, dict) and 'items' in filtered_data:
-        filtered_items = []
-        for item in filtered_data['items']:
-            matches_all = True
-            for cond_key, cond_value in conditions.items():
-                clean_key = cond_key.replace('additionalDetails.items[i].', '')
-                if get_value_from_path(item, clean_key) != cond_value:
-                    matches_all = False
-                    break
-            if matches_all:
-                filtered_items.append(item)
-        filtered_data['items'] = filtered_items
+    # if conditions and isinstance(filtered_data, dict) and 'items' in filtered_data:
+    #     filtered_items = []
+    #     for item in filtered_data['items']:
+    #         matches_all = True
+    #         for cond_key, cond_value in conditions.items():
+    #             clean_key = cond_key.replace('additionalDetails.items[i].', '')
+    #             if get_value_from_path(item, clean_key) != cond_value:
+    #                 matches_all = False
+    #                 break
+    #         if matches_all:
+    #             filtered_items.append(item)
+    #     filtered_data['items'] = filtered_items
 
     # Process each address
     for address in addresses:
@@ -109,10 +109,10 @@ def main():
     print(json.dumps(result, indent=4))
     
     # With conditions
-    conditions = {'additionalDetails.items[i].name': 'Product A'}
-    result = get_json_data_by_address(json_data, filter_address, addresses, conditions)
-    print("\nResults with conditions:")
-    print(json.dumps(result, indent=4))
+    # conditions = {'additionalDetails.items[i].name': 'Product A'}
+    # result = get_json_data_by_address(json_data, filter_address, addresses, conditions)
+    # print("\nResults with conditions:")
+    # print(json.dumps(result, indent=4))
 
     # Test Case 2: filter_address = 'additionalDetails.items[0]'
     filter_address = 'additionalDetails.items[0]'
